@@ -1,0 +1,19 @@
+<!-- views/tours.ejs -->
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh Sách Tour</title>
+</head>
+<body>
+    <h1>Danh Sách Tour</h1>
+    <ul>
+        <% tours.forEach(tour => { %>
+            <li>
+                <strong><%= tour.name %></strong>: <%= tour.description %> - Giá: <%= tour.price %> VNĐ
+            </li>
+        <% }); %>
+    </ul>
+</body>
+</html>
